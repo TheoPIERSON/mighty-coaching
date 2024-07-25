@@ -1,0 +1,47 @@
+$primary-color: #343434;
+$white: white;
+$secondary-color: rgb(236, 236, 236);
+
+* {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: $white;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  height: 4.7rem;
+}
+ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4.7rem;
+}
+svg {
+  width: 80%;
+
+  margin-left: 7%;
+}
+span {
+  margin-right: 1%;
+}
+li {
+  height: 100%;
+}
+.link {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.link:hover {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
