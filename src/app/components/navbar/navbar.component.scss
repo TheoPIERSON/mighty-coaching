@@ -1,6 +1,7 @@
 $primary-color: #343434;
 $white: white;
 $secondary-color: rgb(236, 236, 236);
+$button-color: #48c56c;
 
 * {
   list-style: none;
@@ -31,6 +32,15 @@ svg {
 }
 span {
   margin-right: 1%;
+
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 0.3rem solid $button-color;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+span:hover {
+  background-color: $button-color;
 }
 li {
   height: 100%;
