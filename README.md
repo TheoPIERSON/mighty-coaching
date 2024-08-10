@@ -1,4 +1,4 @@
-# PiersCoaching
+# Mighty Coaching
 
 PiersCoaching is a simple landing page for a fitness coach
 
