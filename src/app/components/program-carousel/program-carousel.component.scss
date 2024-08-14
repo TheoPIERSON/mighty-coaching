@@ -1,16 +1,17 @@
 $primary-color: #343434;
 h1 {
-  margin-bottom: 50rem;
+  margin-bottom: 40rem;
 }
 .slider {
   position: relative;
-  height: 100vh; // Hauteur de l'image
+  height: 100%; // Hauteur de l'image
   display: flex;
 
   align-items: center;
   justify-content: center;
   background-color: $primary-color;
   margin-top: 0.7%;
+  padding-top: 7rem;
 }
 
 .item {
@@ -52,4 +53,16 @@ h1 {
 #prev:hover,
 #next:hover {
   opacity: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Couleur du texte */
+  font-size: 2rem; /* Taille du texte */
+  font-weight: bold; /* Mettre le texte en gras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour améliorer la lisibilité */
+  z-index: 2; /* S'assurer que le texte est au-dessus de l'image */
 }
