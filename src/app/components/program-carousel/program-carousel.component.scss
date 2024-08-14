@@ -1,0 +1,55 @@
+$primary-color: #343434;
+h1 {
+  margin-bottom: 50rem;
+}
+.slider {
+  position: relative;
+  height: 100vh; // Hauteur de l'image
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+  margin-top: 0.7%;
+}
+
+.item {
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  width: 50rem; // Largeur de l'image
+}
+
+.images {
+  width: 50rem;
+  height: 35rem;
+  object-fit: cover;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  background: none;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+  z-index: 10; // Pour rester au-dessus des images
+}
+
+#prev {
+  left: 2%;
+}
+
+#next {
+  right: 2%;
+}
+
+#prev:hover,
+#next:hover {
+  opacity: 1;
+}
