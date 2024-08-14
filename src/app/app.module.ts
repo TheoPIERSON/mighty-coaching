@@ -7,7 +7,8 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { ProgramCarouselComponent } from './components/program-carousel/program-carousel.component';
-import { DiscordComponent } from './discord/discord.component';
+import { DiscordComponent } from './components/discord/discord.component';
+import { NewsletterFormComponent } from './components/newsletter-form/newsletter-form.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { DiscordComponent } from './discord/discord.component';
     HeroComponent,
     ProgramCarouselComponent,
     DiscordComponent,
+    NewsletterFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
