@@ -1,17 +1,16 @@
 $primary-color: #343434;
 h1 {
-  margin-bottom: 40rem;
+  margin-bottom: 50rem;
 }
 .slider {
   position: relative;
   height: 100%; // Hauteur de l'image
   display: flex;
-
   align-items: center;
   justify-content: center;
   background-color: $primary-color;
-  margin-top: 0.7%;
-  padding-top: 7rem;
+  margin-top: 0.5rem;
+  padding-top: 8rem;
 }
 
 .item {
@@ -31,13 +30,13 @@ h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: black;
+  color: white;
   background: none;
   border: none;
   font-size: xxx-large;
   font-family: monospace;
   font-weight: bold;
-  opacity: 0.7;
+  opacity: 0.6;
   transition: opacity 0.5s;
   z-index: 10; // Pour rester au-dessus des images
 }
@@ -65,4 +64,21 @@ h1 {
   font-weight: bold; /* Mettre le texte en gras */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour améliorer la lisibilité */
   z-index: 2; /* S'assurer que le texte est au-dessus de l'image */
+}
+.description-overlay {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(220, 220, 220); /* Couleur du texte */
+  font-size: 1.3rem; /* Taille du texte */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour améliorer la lisibilité */
+  z-index: 2; /* S'assurer que le texte est au-dessus de l'image */
+}
+.hero-title {
+  color: white; /* Couleur du texte */
+  font-size: 3rem; /* Taille du texte */
+  font-weight: bold; /* Mettre le texte en gras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour améliorer la lisibilité */
 }

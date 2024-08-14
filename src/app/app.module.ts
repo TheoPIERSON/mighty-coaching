@@ -7,6 +7,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { ProgramCarouselComponent } from './components/program-carousel/program-carousel.component';
+import { DiscordComponent } from './discord/discord.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ProgramCarouselComponent } from './components/program-carousel/program-
     NavbarComponent,
     HeroComponent,
     ProgramCarouselComponent,
+    DiscordComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
