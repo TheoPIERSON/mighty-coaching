@@ -88,6 +88,6 @@ export class ProgramCarouselComponent implements OnInit, OnDestroy {
   private startAutoSlide(): void {
     this.intervalId = window.setInterval(() => {
       this.showNext();
-    }, 15000); // Défilement toutes les 3 secondes
+    }, 3000); // Défilement toutes les 3 secondes
   }
 }

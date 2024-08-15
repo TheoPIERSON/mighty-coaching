@@ -1,6 +1,11 @@
 $primary-color: #343434;
+$medium-screen: 768px;
+
 h1 {
   margin-bottom: 50rem;
+  @media screen and (max-width: $medium-screen) {
+    margin-bottom: 37rem;
+  }
 }
 .slider {
   position: relative;
@@ -11,18 +16,28 @@ h1 {
   background-color: $primary-color;
   margin-top: 0.5rem;
   padding-top: 8rem;
+  @media screen and (max-width: $medium-screen) {
+    padding-top: 1rem;
+  }
 }
 
 .item {
   position: absolute;
   transition: transform 0.5s ease, opacity 0.5s ease;
   width: 40rem; // Largeur de l'image
+  @media screen and (max-width: $medium-screen) {
+    width: 35rem;
+  }
 }
 
 .images {
   width: 40rem;
   height: 30rem;
   object-fit: cover;
+  @media screen and (max-width: $medium-screen) {
+    width: 35rem;
+    height: 27rem;
+  }
 }
 
 #prev,
