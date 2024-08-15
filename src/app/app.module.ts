@@ -9,6 +9,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ProgramCarouselComponent } from './components/program-carousel/program-carousel.component';
 import { DiscordComponent } from './components/discord/discord.component';
 import { NewsletterFormComponent } from './components/newsletter-form/newsletter-form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NewsletterFormComponent } from './components/newsletter-form/newsletter
     ProgramCarouselComponent,
     DiscordComponent,
     NewsletterFormComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

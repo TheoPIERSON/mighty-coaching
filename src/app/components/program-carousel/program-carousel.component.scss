@@ -16,12 +16,12 @@ h1 {
 .item {
   position: absolute;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  width: 50rem; // Largeur de l'image
+  width: 40rem; // Largeur de l'image
 }
 
 .images {
-  width: 50rem;
-  height: 35rem;
+  width: 40rem;
+  height: 30rem;
   object-fit: cover;
 }
 
@@ -67,7 +67,7 @@ h1 {
 }
 .description-overlay {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(220, 220, 220); /* Couleur du texte */
