@@ -26,7 +26,8 @@ h1 {
   transition: transform 0.5s ease, opacity 0.5s ease;
   width: 50rem; // Largeur de l'image
   @media screen and (max-width: $medium-screen) {
-    width: 35rem;
+    margin-left: 21%;
+    width: 25rem;
   }
 }
 
@@ -35,8 +36,8 @@ h1 {
   height: 30rem;
   object-fit: cover;
   @media screen and (max-width: $medium-screen) {
-    width: 35rem;
-    height: 27rem;
+    width: 20rem;
+    height: 30rem;
   }
 }
 
@@ -54,14 +55,23 @@ h1 {
   opacity: 0.6;
   transition: opacity 0.5s;
   z-index: 10; // Pour rester au-dessus des images
+  @media screen and (max-width: $medium-screen) {
+    top: 90%;
+  }
 }
 
 #prev {
   left: 2%;
+  @media screen and (max-width: $medium-screen) {
+    left: 25%;
+  }
 }
 
 #next {
   right: 2%;
+  @media screen and (max-width: $medium-screen) {
+    right: 25%;
+  }
 }
 
 #prev:hover,
@@ -96,4 +106,18 @@ h1 {
   font-size: 3rem; /* Taille du texte */
   font-weight: bold; /* Mettre le texte en gras */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour améliorer la lisibilité */
+}
+@media screen and (max-width: $medium-screen) {
+  .slider {
+    // Alignement central des éléments du carousel
+    justify-content: center;
+  }
+
+  .item {
+    // Pour masquer les images sur les côtés, on peut simplement les rendre invisibles
+    &:not(:nth-child(1)) {
+      opacity: 0;
+      transform: translateX(0) scale(0); // on les "rétrécit" pour qu'elles ne soient plus visibles
+    }
+  }
 }

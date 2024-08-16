@@ -45,32 +45,43 @@ export class ProgramCarouselComponent implements OnInit, OnDestroy {
 
   private loadShow(): void {
     const itemCount = this.items.length;
+    const isSmallScreen = window.innerWidth <= 700;
 
     this.items.forEach((item, index) => {
       const offset = (index - this.active + itemCount) % itemCount;
 
-      if (offset === 0) {
-        // Image centrale
-        item.style.transform = 'translateX(0) scale(1)';
-        item.style.zIndex = '1';
-        item.style.filter = 'none';
-        item.style.opacity = '1';
-      } else if (offset === 1) {
-        // Image à droite
-        item.style.transform = `translateX(60%) scale(0.8)`;
-        item.style.zIndex = '0';
-        item.style.filter = 'blur(5px)';
-        item.style.opacity = '0.6';
-      } else if (offset === itemCount - 1) {
-        // Image à gauche
-        item.style.transform = `translateX(-60%) scale(0.8)`;
-        item.style.zIndex = '0';
-        item.style.filter = 'blur(5px)';
-        item.style.opacity = '0.6';
+      if (isSmallScreen) {
+        // Sur un petit écran, seules les images centrales sont visibles
+        if (offset === 0) {
+          item.style.transform = 'translateX(0) scale(1)';
+          item.style.zIndex = '1';
+          item.style.filter = 'none';
+          item.style.opacity = '1';
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'translateX(0) scale(0)';
+        }
       } else {
-        // Les autres images sont cachées
-        item.style.transform = 'translateX(-1000px)'; // Positionner hors de l'écran
-        item.style.opacity = '0';
+        // Comportement habituel sur grand écran
+        if (offset === 0) {
+          item.style.transform = 'translateX(0) scale(1)';
+          item.style.zIndex = '1';
+          item.style.filter = 'none';
+          item.style.opacity = '1';
+        } else if (offset === 1) {
+          item.style.transform = `translateX(60%) scale(0.8)`;
+          item.style.zIndex = '0';
+          item.style.filter = 'blur(5px)';
+          item.style.opacity = '0.6';
+        } else if (offset === itemCount - 1) {
+          item.style.transform = `translateX(-60%) scale(0.8)`;
+          item.style.zIndex = '0';
+          item.style.filter = 'blur(5px)';
+          item.style.opacity = '0.6';
+        } else {
+          item.style.transform = 'translateX(-1000px)';
+          item.style.opacity = '0';
+        }
       }
     });
   }
