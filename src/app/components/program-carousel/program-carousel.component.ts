@@ -69,12 +69,12 @@ export class ProgramCarouselComponent implements OnInit, OnDestroy {
           item.style.filter = 'none';
           item.style.opacity = '1';
         } else if (offset === 1) {
-          item.style.transform = `translateX(60%) scale(0.8)`;
+          item.style.transform = `translateX(40%) scale(0.8)`;
           item.style.zIndex = '0';
           item.style.filter = 'blur(5px)';
           item.style.opacity = '0.6';
         } else if (offset === itemCount - 1) {
-          item.style.transform = `translateX(-60%) scale(0.8)`;
+          item.style.transform = `translateX(-40%) scale(0.8)`;
           item.style.zIndex = '0';
           item.style.filter = 'blur(5px)';
           item.style.opacity = '0.6';
