@@ -14,7 +14,7 @@ h1 {
   align-items: center;
   justify-content: center;
   background-color: $primary-color;
-  margin-top: 0.5rem;
+  margin-top: 4.5rem;
   padding-top: 8rem;
   @media screen and (max-width: $medium-screen) {
     padding-top: 1rem;
@@ -24,14 +24,14 @@ h1 {
 .item {
   position: absolute;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  width: 40rem; // Largeur de l'image
+  width: 50rem; // Largeur de l'image
   @media screen and (max-width: $medium-screen) {
     width: 35rem;
   }
 }
 
 .images {
-  width: 40rem;
+  width: 50rem;
   height: 30rem;
   object-fit: cover;
   @media screen and (max-width: $medium-screen) {

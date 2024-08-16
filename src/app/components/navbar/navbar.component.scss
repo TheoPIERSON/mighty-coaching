@@ -50,12 +50,10 @@ $button-color: #48c56c;
 .topnav {
   overflow: hidden;
   display: flex;
-  width: 100%;
+  width: 100vw;
   align-items: center;
   background-color: $primary-color;
   height: 4.2rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 svg {
   margin-top: 0%;
@@ -63,7 +61,6 @@ svg {
 }
 #shop-link {
   margin-left: 50%;
-
   padding: 0.5rem 1rem;
   background-color: transparent;
   border: 0.3rem solid $button-color;
@@ -98,7 +95,6 @@ svg {
   right: 2%;
   top: -0.5%;
   cursor: pointer;
-
   transition: transform 0.3s ease; /* Ajoute une transition pour la rotation */
 }
 
