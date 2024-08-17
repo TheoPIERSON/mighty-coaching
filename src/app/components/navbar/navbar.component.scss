@@ -83,16 +83,19 @@ svg {
   .topnav a:not(:first-child) {
     display: none;
   }
+  .sections {
+    display: grid;
+  }
   .show-button {
     float: right;
     display: block;
   }
   #shop-link {
-    margin-left: 5%;
+    margin-left: 0%;
     padding: 0.5rem 1rem;
     background-color: transparent;
     border: 0.3rem solid $button-color;
-    width: 15%;
+    width: 25%;
     transition: 0.3s ease;
   }
   .link {

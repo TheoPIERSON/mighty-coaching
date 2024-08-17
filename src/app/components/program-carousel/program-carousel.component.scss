@@ -3,6 +3,7 @@ $medium-screen: 768px;
 
 h1 {
   margin-bottom: 50rem;
+  text-align: center;
   @media screen and (max-width: $medium-screen) {
     margin-bottom: 37rem;
   }
@@ -26,10 +27,16 @@ h1 {
   position: absolute;
   transition: transform 0.5s ease, opacity 0.5s ease;
   width: 50rem; // Largeur de l'image
+  height: 29rem;
+  transition: 200ms;
   @media screen and (max-width: $medium-screen) {
     margin-left: 21%;
     width: 25rem;
   }
+}
+.item:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .images {
