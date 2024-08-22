@@ -98,6 +98,9 @@ h1 {
   font-weight: bold; /* Mettre le texte en gras */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour améliorer la lisibilité */
   z-index: 2; /* S'assurer que le texte est au-dessus de l'image */
+  @media screen and (max-width: $medium-screen) {
+    top: 30%;
+  }
 }
 .description-overlay {
   position: absolute;

@@ -38,6 +38,9 @@ svg {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 5rem;
+  @media screen and (max-width: $medium-screen) {
+    top: 30%;
+  }
 }
 
 h2 {
@@ -51,6 +54,9 @@ h2 {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media screen and (max-width: $medium-screen) {
+    top: 70%;
+  }
 }
 
 img:hover {
