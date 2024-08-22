@@ -30,8 +30,8 @@ h1 {
   height: 29rem;
   transition: 200ms;
   @media screen and (max-width: $medium-screen) {
-    margin-left: 21%;
-    width: 25rem;
+    margin-left: 0%;
+    width: 100vw;
   }
 }
 .item:hover {
@@ -46,6 +46,7 @@ h1 {
   @media screen and (max-width: $medium-screen) {
     width: 20rem;
     height: 30rem;
+    margin-left: 7%;
   }
 }
 
