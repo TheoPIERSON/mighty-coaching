@@ -3,16 +3,19 @@ $medium-screen: 768px;
 .container {
   display: grid;
   place-items: center;
-  margin-top: 1%;
+  margin-top: 0.5rem;
   background-color: $primary-color;
   color: white;
   font-weight: bold;
 }
 h1 {
-  margin-top: 20%;
+  margin-top: 10%;
   text-align: center;
   font-size: 3rem; /* Taille du texte */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour améliorer la lisibilité */
+  @media screen and (max-width: $medium-screen) {
+    margin-top: 20%;
+  }
 }
 input {
   background-color: rgba(255, 255, 255, 0.304);
@@ -20,17 +23,23 @@ input {
   border-radius: 15px;
   padding: 0.8rem;
   width: 15rem;
-  margin-top: 20%;
+  margin-top: 10%;
+  @media screen and (max-width: $medium-screen) {
+    margin-top: 20%;
+  }
 }
 button {
   margin-top: 10%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
   background-color: white;
   border: none;
   border-radius: 15px;
   padding: 0.5rem 1rem;
   font-weight: 600;
   font-size: 1.5rem;
+  @media screen and (max-width: $medium-screen) {
+    margin-bottom: 20%;
+  }
 }
 ::placeholder {
   color: rgba(255, 255, 255, 0.376);
