@@ -4,3 +4,23 @@ $primary-color: #343434;
   color: white;
   margin-top: 0.5rem;
 }
+h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  list-style: none;
+}
+li {
+  padding: 1rem 6rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
